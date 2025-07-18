@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài thực hành chương 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="flex-container">
+        <section class="card">
+            <h1>Thêm sinh viên</h1>
+            <form action="" method="post">
+                <label for="studentId">Mã sinh viên:</label> 
+                <input type="text" id="studentId" name="studentId" required>
+                
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="NgaySinh">Ngày sinh:</label>
+                <input type="date" id="NgaySinh" name="NgaySinh" required>
+                
+                <label >Giới tính:</label>
+                <section class="radio-group">
+                    <input type="radio" id="Nam" name="GioiTinh" value="Nam" checked>
+                    <label for="Nam">Nam</label>
+                    <input type="radio" id="Nu" name="GioiTinh" value="Nu">
+                    <label for="Nu">Nữ</label>
+                </section>
+
+                <label for="GhiChu">Ghi chú:</label> 
+                <textarea id="Ghichu" name="Ghichu"></textarea>  
+
+                <button type="submit">Thêm sinh viên</button>
+            </form>
+        </section>
+        <section class="card">
+            <h1>Bảng danh sách sinh viên</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2">STT</th>
+                        <th rowspan="2">Mã SV</th>
+                        <th rowspan="2">Họ Tên</th>
+                        <th rowspan="2">Email</th>
+                        <th rowspan="2">Giới tính</th>
+                        <th rowspan="2">Ngày sinh</th>
+                        <th colspan="2">Chức năng</th>
+                    </tr>
+                    <tr>
+                        <th>Sửa</th>
+                        <th>Xoá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>SV01</td>
+                        <td>Bùi Mạnh Đức</td>
+                        <td>buimanhduc@gmail.com</td>
+                        <td>Nam</td>
+                        <td>02/11/2004</td>
+                        <td><button class="btn-table">sửa</button></td>
+                        <td><button class="btn-table">xoá</button></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>SV01</td>
+                        <td>Bùi Mạnh Đức</td>
+                        <td>buimanhduc@gmail.com</td>
+                        <td>Nam</td>
+                        <td>02/11/2004</td>
+                        <td><button class="btn-table">sửa</button></td>
+                        <td><button class="btn-table">xoá</button></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>SV01</td>
+                        <td>Bùi Mạnh Đức</td>
+                        <td>buimanhduc@gmail.com</td>
+                        <td>Nam</td>
+                        <td>02/11/2004</td>
+                        <td><button class="btn-table">sửa</button></td>
+                        <td><button class="btn-table">xoá</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </section>
+</body>
+</html>
